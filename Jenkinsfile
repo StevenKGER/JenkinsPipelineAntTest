@@ -1,5 +1,5 @@
 node('docker-slave-java') {
-    checout scm
+    checkout scm
     withAnt() {
         sh "ant"
     }
